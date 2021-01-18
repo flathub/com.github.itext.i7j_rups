@@ -1,5 +1,5 @@
 {
-    "id": "com.github.itext.i7j_rups",
+    "id": "com.itextpdf.RUPS",
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "20.08",
     "command": "rups",
@@ -12,9 +12,7 @@
         "--share=ipc",
         "--socket=x11",
         "--socket=pulseaudio",
-        "--filesystem=xdg-documents",
-        "--filesystem=xdg-download",
-        "--filesystem=xdg-pictures",
+        "--filesystem=home",
         "--persist=.java"
     ],
     "modules": [
@@ -83,12 +81,10 @@
                 "install -Dm755 rups.sh /app/bin/rups"
             ],
             "post-install": [
-                "desktop-file-install --dir=/app/share/applications com.github.itext.i7j_rups.desktop",
-                "install -Dm644 com.github.itext.i7j_rups.metainfo.xml /app/share/metainfo/com.github.itext.i7j_rups.metainfo.xml",
-                "for i in 32 48 64 96 128 256 512; do
-                    convert logo.png -resize ${i}x${i} rups${i}x${i}.png
-                    install -Dm644 rups${i}x${i}.png ${FLATPAK_DEST}/share/icons/hicolor/${i}x${i}/apps/com.github.itext.i7j_rups.png
-                done"
+                "desktop-file-install --dir=/app/share/applications com.itextpdf.RUPS.desktop",
+                "install -Dm644 com.itextpdf.RUPS.metainfo.xml /app/share/metainfo/com.itextpdf.RUPS.metainfo.xml",
+                "convert logo.png -resize 512x512 rups512x512.png",
+                "install -Dm644 rups512x512.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/com.itextpdf.RUPS.png"
             ],
             "sources": [
                 {
@@ -99,11 +95,11 @@
                 },
                 {
                   "type": "file",
-                  "path": "com.github.itext.i7j_rups.metainfo.xml"
+                  "path": "com.itextpdf.RUPS.metainfo.xml"
                 },
                 {
                   "type": "file",
-                  "path": "com.github.itext.i7j_rups.desktop"
+                  "path": "com.itextpdf.RUPS.desktop"
                 },
                 {
                   "type": "file",
