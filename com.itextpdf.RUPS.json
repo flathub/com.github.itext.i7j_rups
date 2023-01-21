@@ -20,6 +20,7 @@
             "name": "xgetres",
             "buildsystem": "simple",
             "build-commands": [
+                "echo force rebuild",
                 "make",
                 "make install PREFIX=/app"
             ],
