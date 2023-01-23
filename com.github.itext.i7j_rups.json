@@ -1,5 +1,5 @@
 {
-    "id": "com.github.itext.i7j_rups",
+    "app-id": "com.github.itext.i7j_rups",
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "20.08",
     "command": "rups",
