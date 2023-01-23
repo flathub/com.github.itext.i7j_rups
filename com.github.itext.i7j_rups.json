@@ -1,5 +1,5 @@
 {
-    "id": "com.itextpdf.RUPS",
+    "id": "com.github.itext.i7j_rups",
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "20.08",
     "command": "rups",
@@ -81,10 +81,10 @@
                 "install -Dm755 rups.sh /app/bin/rups"
             ],
             "post-install": [
-                "desktop-file-install --dir=/app/share/applications com.itextpdf.RUPS.desktop",
-                "install -Dm644 com.itextpdf.RUPS.metainfo.xml /app/share/metainfo/com.itextpdf.RUPS.metainfo.xml",
+                "desktop-file-install --dir=/app/share/applications com.github.itext.i7j_rups.desktop",
+                "install -Dm644 com.github.itext.i7j_rups.metainfo.xml /app/share/metainfo/com.github.itext.i7j_rups.metainfo.xml",
                 "convert logo.png -resize 512x512 rups512x512.png",
-                "install -Dm644 rups512x512.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/com.itextpdf.RUPS.png"
+                "install -Dm644 rups512x512.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/com.github.itext.i7j_rups.png"
             ],
             "sources": [
                 {
@@ -95,11 +95,11 @@
                 },
                 {
                   "type": "file",
-                  "path": "com.itextpdf.RUPS.metainfo.xml"
+                  "path": "com.github.itext.i7j_rups.metainfo.xml"
                 },
                 {
                   "type": "file",
-                  "path": "com.itextpdf.RUPS.desktop"
+                  "path": "com.github.itext.i7j_rups.desktop"
                 },
                 {
                   "type": "file",
