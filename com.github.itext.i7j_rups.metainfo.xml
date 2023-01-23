@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>com.itextpdf.RUPS</id>
-  <launchable type="desktop-id">com.itextpdf.RUPS.desktop</launchable>
+  <id>com.github.itext.i7j_rups</id>
+  <launchable type="desktop-id">com.github.itext.i7j_rups.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>AGPL-3.0-only</project_license>
   <developer_name>iText</developer_name>
